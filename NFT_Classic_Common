@@ -13,7 +13,7 @@ contract HOTSC is ERC721 {
     constructor() ERC721("CryptoHots Common", "HOTSC") {}
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://gateway.pinata.cloud/ipfs/QmNePA9CBbGbPYg2GLaSBbybrj1FbZDXFNUqvurYnz5QLr/";
+        return "https://gateway.pinata.cloud/ipfs/QmNePA9CBbGbPYg2GLaSBbybrj1FbZDXFNUqvurYnz5QLr/";//example
     }
 
     function mintNFT(address to) public payable
