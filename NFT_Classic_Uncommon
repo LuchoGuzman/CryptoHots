@@ -10,7 +10,7 @@ contract HOTSI is ERC721 {
     address public CREATOR = 0x291AE850219b8E32362EB37E6386D5EE2159a3fA;//example
     uint256 public token_count;
 
-    constructor() ERC721("CryptoHots Infrecuent", "HOTSI") {}
+    constructor() ERC721("CryptoHots Uncommon", "HOTSU") {}
 
     function _baseURI() internal view virtual override returns (string memory) {
         return "https://gateway.pinata.cloud/ipfs/QmNePA9CBbGbPYg2GLaSBbybrj1FbZDXFNUqvurYnz5QLr/";//example
