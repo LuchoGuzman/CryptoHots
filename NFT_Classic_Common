@@ -5,13 +5,13 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract HOTSC is ERC721, Ownable, ERC721Enumerable {
+contract HOTSCC is ERC721, Ownable, ERC721Enumerable {
     uint256 public _totalSupply = 10000;
     uint256 public PRICE = 0.15 ether;
     address public CREATOR = 0x708B9e74b1f425b2752d11DE68c6A3e1c23633c1;//example
     uint256 public token_count;
 
-    constructor() ERC721("CryptoHots Common", "HOTSC")  {}
+    constructor() ERC721("CryptoHots Classic Common", "HOTSCC")  {}
 
     function _baseURI() internal view virtual override returns (string memory) {
         return "https://gateway.pinata.cloud/ipfs/QmahHTB95DWuCRRwrK3MyCVqeBgFYLHhaPaw7R9jL1ecjT/";//example
